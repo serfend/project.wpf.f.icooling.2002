@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "position_1.jpg",
+    "description": "单控制柜，各个面自由立放"
+  },
+  {
+    "id": 2,
+    "img": "position_2.jpg",
+    "description": "单控制柜靠墙放置"
+  },
+  {
+    "id": 3,
+    "img": "position_3.jpg",
+    "description": "一套柜中第一个或最后一个控制柜，自由立放"
+  },
+  {
+    "id": 4,
+    "img": "position_4.jpg",
+    "description": "一套柜中南第一个或最后一个控制柜，靠墙"
+  },
+  {
+    "id": 5,
+    "img": "position_5.jpg",
+    "description": "一套柜中的控制柜，自由立放"
+  },
+  {
+    "id": 6,
+    "img": "position_6.jpg",
+    "description": "一套柜中的控制柜，靠墙"
+  },
+]

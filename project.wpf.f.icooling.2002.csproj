@@ -47,6 +47,9 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Panuon.UI.Silver, Version=1.0.9.7, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Panuon.UI.Silver.1.0.9.7\lib\net45\Panuon.UI.Silver.dll</HintPath>
     </Reference>
@@ -78,6 +81,7 @@
     <Compile Include="Controller\Helper.cs" />
     <Compile Include="Extensions\DeviceExtensions.cs" />
     <Compile Include="Model\Device\Device.cs" />
+    <Compile Include="Model\Device\DevicePosition.cs" />
     <Compile Include="Model\TabControllViewItemModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -89,6 +93,12 @@
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\CalendarView.xaml.cs">
       <DependentUpon>CalendarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Control\DevicePosition.xaml.cs">
+      <DependentUpon>DevicePosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Control\SingleOption.xaml.cs">
+      <DependentUpon>SingleOption.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\DeviceView.xaml.cs">
       <DependentUpon>DeviceView.xaml</DependentUpon>
@@ -111,13 +121,21 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Resources\style.xaml">
+    <Resource Include="Resources\style.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
+    </Resource>
     <Page Include="View\CalendarView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Control\DevicePosition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Control\SingleOption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\DeviceView.xaml">
       <SubType>Designer</SubType>
@@ -137,6 +155,7 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="packages.config" />
+    <Resource Include="Resources\device.position.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -158,6 +177,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

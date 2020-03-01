@@ -1,7 +1,11 @@
-﻿using project.wpf.f.icooling._2002.Controller;
+﻿using Newtonsoft.Json;
+using project.wpf.f.icooling._2002.Controller;
+using project.wpf.f.icooling._2002.Model.Device;
 using project.wpf.f.icooling._2002.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +28,18 @@ namespace project.wpf.f.icooling._2002.View
 	{
 		public DeviceView()
 		{
-			DeviceViewModel viewModel = new DeviceViewModel() { Device = new Model.Device.Device() { Name = this.GetType().Name.Replace("View", ""), Size = new Model.Device.DeviceSize() } };
+			var f = Encoding.UTF8.GetString(Properties.Resources.device_position);
+			var list = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(f);
+			foreach (var i in list) i.Img = $"/Resources/{i.Img}";
+			DeviceViewModel viewModel = new DeviceViewModel()
+			{
+				Device = new Model.Device.Device()
+				{
+					Name = this.GetType().Name.Replace("View", ""),
+					Size = new Model.Device.DeviceSize(),
+					Positions = list
+				}
+			};
 			DataContext = viewModel;
 			InitializeComponent();
 			switch (Helper.Tier)

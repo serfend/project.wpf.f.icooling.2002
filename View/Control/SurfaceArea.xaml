@@ -14,46 +14,38 @@
 			<Setter Property="pu:TextBoxHelper.Watermark" Value="单位/mm" />
 			<Setter Property="pu:TextBoxHelper.CornerRadius" Value="5" />
 			<Setter Property="Height" Value="30" />
-			<Setter Property="Width" Value="200" />
+			<Setter Property="Width" Value="150" />
 		</Style>
 	</UserControl.Resources>
 	<Grid>
-		<StackPanel
-			Orientation="Horizontal">
-			<GroupBox
-				pu:GroupBoxHelper.HeaderPadding="0 -2 800 0"
+		<GroupBox
 				Header="1、柜体尺寸"
-				VerticalAlignment="Center"
-				HorizontalAlignment="Center"
 				pu:GroupBoxHelper.CornerRadius="1"
+			Width="1000"
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
-				<WrapPanel
+			<WrapPanel
 					Orientation="Horizontal">
-					<TextBox
-						Text="{Binding Size.W}"
+				<TextBox
+						Text="{Binding W}"
 						 Style="{StaticResource  InputText}"
                  pu:TextBoxHelper.Header="W " />
-					<TextBox
-						Text="{Binding Size.H}"
+				<TextBox
+						Text="{Binding H}"
 							 Style="{StaticResource  InputText}"
              pu:TextBoxHelper.Header="H " />
-					<TextBox
+				<TextBox
 						 Style="{StaticResource  InputText}"
-						Text="{Binding Size.D}"
+						Text="{Binding D}"
              pu:TextBoxHelper.Header="D " />
-					<GridSplitter Background="DarkGray" Margin="10 0" Width="2"></GridSplitter>
-					<TextBox
+				<GridSplitter Background="DarkGray" Margin="10 0" Width="2"></GridSplitter>
+				<TextBox
 						Margin="10 0"
 						VerticalAlignment="Center"
 						 Style="{StaticResource  InputText}"
 						pu:TextBoxHelper.Watermark="单位/m²"
-						Text="{Binding Size.SurfaceArea}"
+						Text="{Binding SurfaceArea}"
              pu:TextBoxHelper.Header="表面积 " />
-				</WrapPanel>
-			</GroupBox>
-			<StackPanel>
-				<TextBlock FontSize="20" Text="{Binding Name}"></TextBlock>
-			</StackPanel>
-		</StackPanel>
+			</WrapPanel>
+		</GroupBox>
 	</Grid>
 </UserControl>

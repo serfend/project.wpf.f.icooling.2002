@@ -88,6 +88,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        public static byte[] device_position {
+            get {
+                object obj = ResourceManager.GetObject("device_position", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 123 的本地化字符串。
         /// </summary>
         public static string IsSundayFirst {
@@ -140,6 +150,66 @@ namespace project.wpf.f.icooling._2002.Properties {
         public static string Palette {
             get {
                 return ResourceManager.GetString("Palette", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_1 {
+            get {
+                object obj = ResourceManager.GetObject("position_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_2 {
+            get {
+                object obj = ResourceManager.GetObject("position_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_3 {
+            get {
+                object obj = ResourceManager.GetObject("position_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_4 {
+            get {
+                object obj = ResourceManager.GetObject("position_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_5 {
+            get {
+                object obj = ResourceManager.GetObject("position_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_6 {
+            get {
+                object obj = ResourceManager.GetObject("position_6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

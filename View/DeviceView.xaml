@@ -4,9 +4,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View"
-			 xmlns:surfaceView="clr-namespace:project.wpf.f.icooling._2002.View.Control"
+			 xmlns:control="clr-namespace:project.wpf.f.icooling._2002.View.Control"
              mc:Ignorable="d"
-             d:DesignHeight="640" d:DesignWidth="1000">
+             d:DesignHeight="720" d:DesignWidth="1000">
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="10*"></RowDefinition>
@@ -16,6 +16,21 @@
 			<RowDefinition Height="20*"></RowDefinition>
 		</Grid.RowDefinitions>
 		<Rectangle x:Name="RectBackground" />
-		<surfaceView:SurfaceAreaView DataContext="{Binding Device}" />
+		<Grid Grid.Row="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="8*" />
+				<ColumnDefinition Width="2*" />
+			</Grid.ColumnDefinitions>
+			<control:SurfaceAreaView Grid.Column="0" HorizontalAlignment="Left" DataContext="{Binding Device.Size}" />
+			<TextBlock Text="{Binding Device.Name}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+		</Grid>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="7*" />
+				<ColumnDefinition Width="3*" />
+			</Grid.ColumnDefinitions>
+			<control:DevicePosition Grid.Column="0" DataContext="{Binding Device.Positions}" />
+			<Image Grid.Column="1" Source="/Resources/logo.png" />
+		</Grid>
 	</Grid>
 </UserControl>
