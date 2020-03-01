@@ -16,9 +16,7 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\project.wpf.f
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\App.baml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\Resources\style.baml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\CalendarView.g.cs
-C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\机柜空调View.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\CalendarView.baml
-C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\机柜空调View.baml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\project.wpf.f.icooling.2002.csprojAssemblyReference.cache
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\SplashView.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\SplashView.baml
@@ -33,3 +31,8 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\GalaSoft.Mvvm
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\DeviceView.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\SurfaceArea.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\DeviceView.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\SurfaceArea.baml

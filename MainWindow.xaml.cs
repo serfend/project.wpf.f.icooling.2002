@@ -52,7 +52,7 @@ namespace project.wpf.f.icooling._2002
 			InitializeComponent();
 			var list = new ObservableCollection<TabControllViewItemModel>() {
 				new TabControllViewItemModel("主页","Splash","\uf05a"),
-				new TabControllViewItemModel("机柜空调","机柜空调","\uf05a"),
+				new TabControllViewItemModel("机柜空调","Device","\uf05a"),
 				new TabControllViewItemModel("风扇过滤器","Calendar","\uf05a"),
 				new TabControllViewItemModel("加热器","tag3","\uf05a"),
 				new TabControllViewItemModel("水热交换器","tag3","\uf05a"),
@@ -74,7 +74,6 @@ namespace project.wpf.f.icooling._2002
 		private void NavMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			var selectedItem = NavMenu.SelectedItem as TabControllViewItemModel;
-			var selIndex = NavMenu.SelectedIndex;
 			var loadPageName = _partialViewDic.ContainsKey(selectedItem.Tag) ? selectedItem.Tag : "Splash";
 			if (selectedItem.Content == null)
 				selectedItem.Content = Activator.CreateInstance(_partialViewDic[loadPageName]);

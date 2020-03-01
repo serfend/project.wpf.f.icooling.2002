@@ -16,18 +16,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace project.wpf.f.icooling._2002.View
+namespace project.wpf.f.icooling._2002.View.Control
 {
 	/// <summary>
-	/// 机柜空调View.xaml 的交互逻辑
+	/// 表面积的交互逻辑
 	/// </summary>
-	public partial class 机柜空调View : UserControl
+	public partial class SurfaceAreaView : UserControl
 	{
-		public 机柜空调View()
+		public SurfaceAreaView()
 		{
 			InitializeComponent();
-			DeviceViewModel viewModel = new DeviceViewModel() { Device = new Model.Device.Device() { Name = this.GetType().Name.Replace("View", ""), Size = new Model.Device.DeviceSize() } };
-			DataContext = viewModel;
 			UpdateVisualEffect();
 		}
 
@@ -38,7 +36,6 @@ namespace project.wpf.f.icooling._2002.View
 				case 1:
 				case 2:
 					//AnimationHelper.SetSlideInFromBottom(GrpPalette, true);
-					RectBackground.Fill = FindResource("GridBrush") as Brush;
 					//GroupBoxHelper.SetShadowColor(GrpPalette, Colors.LightGray);
 					//GroupBoxHelper.SetShadowColor(GrpCode, Colors.LightGray);
 					break;

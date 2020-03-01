@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\App.xaml
-5937052646
+62064150035
 
-14-1422142230
+15372180620
 125-911558883
-MainWindow.xaml;Resources\style.xaml;View\CalendarView.xaml;View\SplashView.xaml;View\机柜空调View.xaml;
+MainWindow.xaml;Resources\style.xaml;View\CalendarView.xaml;View\DeviceView.xaml;View\SplashView.xaml;View\Control\SurfaceArea.xaml;
 
 False
 
