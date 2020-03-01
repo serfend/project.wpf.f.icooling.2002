@@ -1,0 +1,52 @@
+﻿<pu:WindowX x:Class="project.wpf.f.icooling._2002.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+		xmlns:res="clr-namespace:project.wpf.f.icooling._2002.Properties"
+		WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="主界面" Height="800" Width="1000">
+	<pu:WindowXCaption.ExtendControl>
+		<Button Content="&#xf1d6;"
+                FontFamily="{StaticResource FontAwesome}"
+                pu:ButtonHelper.ButtonStyle="Hollow"
+                pu:ButtonHelper.HoverBrush="#99999999"
+                Width="40"
+                BorderThickness="0"
+                Foreground="#3E3E3E"
+                FontSize="20" />
+	</pu:WindowXCaption.ExtendControl>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="10*"></RowDefinition>
+			<RowDefinition Height="90*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<WrapPanel
+			HorizontalAlignment="Left"
+			Grid.Row="0"
+			Width="800">
+			<Image Margin="20 0" Source="/Resources/logo.png"></Image>
+			<TextBlock VerticalAlignment="Center" FontSize="30"  Text="企业LOGO/名称  佐志温控"></TextBlock>
+		</WrapPanel>
+		<TabControl x:Name="NavMenu"
+			 Grid.Row="1"
+			  BorderBrush="Transparent"
+			  pu:TabControlHelper.SelectedForeground="#49A9C0"
+			  SelectionChanged="NavMenu_SelectionChanged"
+			  ItemsSource="{Binding MenuItems}">
+			<TabControl.ItemContainerStyle>
+				<Style TargetType="{x:Type TabItem}"
+                           BasedOn="{StaticResource {x:Type TabItem}}">
+					<Setter Property="Visibility"
+                                Value="{Binding Visibility}" />
+					<Setter Property="pu:TabControlHelper.ItemIcon"
+                                Value="{Binding Icon}" />
+					<Setter Property="Header" Value="{Binding Header}" />
+					<Setter Property="Content" Value="{Binding Content}" />
+				</Style>
+			</TabControl.ItemContainerStyle>
+		</TabControl>
+	</Grid>
+</pu:WindowX>
