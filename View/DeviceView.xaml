@@ -43,6 +43,7 @@
 				<ColumnDefinition Width="45*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
 			<control:DeviceInstallPosition Grid.Column="0" DataContext="{Binding Device.InstallPositions}" />
+			<control:DeviceMaterial Grid.Column="1" x:Name="DeviceMaterial" />
 		</Grid>
 	</Grid>
 </UserControl>

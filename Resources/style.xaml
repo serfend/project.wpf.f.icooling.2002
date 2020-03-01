@@ -2,6 +2,15 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
 >
+	<Style x:Key="InputText"
+           TargetType="TextBox"
+           BasedOn="{StaticResource {x:Type TextBox}}">
+		<Setter Property="Margin"   Value="5,0,0,0" />
+		<Setter Property="pu:TextBoxHelper.Watermark" Value="单位/mm" />
+		<Setter Property="pu:TextBoxHelper.CornerRadius" Value="5" />
+		<Setter Property="Height" Value="30" />
+		<Setter Property="Width" Value="150" />
+	</Style>
 	<DrawingBrush x:Key="GridBrush"
                   Viewport="0,0,12,12"
                   ViewportUnits="Absolute"
@@ -155,7 +164,5 @@
 				</Style>
 			</Setter.Value>
 		</Setter>
-
 	</Style>
-
 </ResourceDictionary>

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="project.wpf.f.icooling._2002.View.Control.DeviceMaterial"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View.Control"
+			 xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+             mc:Ignorable="d"
+             d:DesignHeight="70" d:DesignWidth="450">
+	<Grid>
+		<GroupBox
+				Header="4、安装材料"
+				pu:GroupBoxHelper.CornerRadius="1"
+				pu:GroupBoxHelper.IsSplitLineVisible="True">
+			<StackPanel Orientation="Horizontal">
+				<ComboBox Margin="0 0 30 0"
+					  Width="200"
+					  HorizontalAlignment="Left"
+					  pu:ComboBoxHelper.Header=" "
+					  Name="ComboBox"
+					  SelectionChanged="ComboBox_SelectionChanged"
+					  DisplayMemberPath="Name"
+					  SelectedValuePath="Id"
+					  ItemsSource="{Binding Members}"
+					  ></ComboBox>
+				<TextBox Name="Ratio" Text="{Binding NowSelect.Ratio}" pu:TextBoxHelper.Watermark="W/m²K" pu:TextBoxHelper.Header="传导系数 " IsEnabled="False" Style="{StaticResource InputText}"></TextBox>
+			</StackPanel>
+		</GroupBox>
+	</Grid>
+</UserControl>

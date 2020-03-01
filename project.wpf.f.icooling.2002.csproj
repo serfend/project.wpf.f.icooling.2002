@@ -81,6 +81,7 @@
     <Compile Include="Controller\Helper.cs" />
     <Compile Include="Extensions\DeviceExtensions.cs" />
     <Compile Include="Model\Device\Device.cs" />
+    <Compile Include="Model\Device\DeviceMaterial.cs" />
     <Compile Include="Model\Device\DevicePosition.cs" />
     <Compile Include="Model\TabControllViewItemModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -89,6 +90,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <Compile Include="ViewModel\DeviceMaterialViewModel.cs" />
     <Compile Include="ViewModel\DeviceViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\CalendarView.xaml.cs">
@@ -96,6 +98,9 @@
     </Compile>
     <Compile Include="View\Control\DeviceInstallPosition.xaml.cs">
       <DependentUpon>DeviceInstallPosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Control\DeviceMaterial.xaml.cs">
+      <DependentUpon>DeviceMaterial.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Control\DevicePosition.xaml.cs">
       <DependentUpon>DevicePosition.xaml</DependentUpon>
@@ -136,6 +141,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Control\DeviceMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Control\DevicePosition.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -162,6 +171,7 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="packages.config" />
+    <Resource Include="Resources\device.material.json" />
     <Resource Include="Resources\device.installPosition.json" />
     <Resource Include="Resources\device.position.json" />
   </ItemGroup>

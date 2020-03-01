@@ -14,6 +14,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		private string name;
 		public ObservableCollection<DevicePosition> Positions { get; set; }
 		public ObservableCollection<DeviceInstallPosition> InstallPositions { get; set; }
+		public ObservableCollection<DeviceMaterial> Material { get; set; }
 
 		public string Name
 		{

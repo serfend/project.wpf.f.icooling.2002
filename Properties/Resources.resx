@@ -130,6 +130,9 @@
   <data name="device_installPosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\device.installPosition.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="device_material" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\device.material.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="device_position" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\device.position.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

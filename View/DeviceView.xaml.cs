@@ -28,12 +28,12 @@ namespace project.wpf.f.icooling._2002.View
 	{
 		public DeviceView()
 		{
-			var f = Encoding.UTF8.GetString(Properties.Resources.device_position);
-			var Positions = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(f);
-			foreach (var i in Positions) i.Img = $"/Resources/{i.Img}";
+			InitializeComponent();
 
-			f = Encoding.UTF8.GetString(Properties.Resources.device_installPosition);
-			var InstallPositions = JsonConvert.DeserializeObject<ObservableCollection<DeviceInstallPosition>>(f);
+			var Positions = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(Encoding.UTF8.GetString(Properties.Resources.device_position));
+			foreach (var i in Positions) i.Img = $"/Resources/{i.Img}";
+			var InstallPositions = JsonConvert.DeserializeObject<ObservableCollection<DeviceInstallPosition>>(Encoding.UTF8.GetString(Properties.Resources.device_installPosition));
+			var Material = JsonConvert.DeserializeObject<ObservableCollection<DeviceMaterial>>(Encoding.UTF8.GetString(Properties.Resources.device_material));
 			DeviceViewModel viewModel = new DeviceViewModel()
 			{
 				Device = new Model.Device.Device()
@@ -41,11 +41,19 @@ namespace project.wpf.f.icooling._2002.View
 					Name = this.GetType().Name.Replace("View", ""),
 					Size = new Model.Device.DeviceSize(),
 					Positions = Positions,
-					InstallPositions = InstallPositions
+					InstallPositions = InstallPositions,
+					Material = Material
 				}
 			};
+
+			//初始化设备材料的ViewModel
+			DeviceMaterial.DataContext = new DeviceMaterialViewModel()
+			{
+				Members = Material,
+				NowSelect = new DeviceMaterial()
+			};
+
 			DataContext = viewModel;
-			InitializeComponent();
 			switch (Helper.Tier)
 			{
 				case 2:

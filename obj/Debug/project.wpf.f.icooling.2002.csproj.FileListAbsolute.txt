@@ -40,6 +40,7 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\Newtonsoft.Js
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\bin\Debug\Newtonsoft.Json.xml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\SingleOption.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\SingleOption.baml
-C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\project.wpf.f.icooling.2002.csprojAssemblyReference.cache
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceInstallPosition.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceInstallPosition.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceMaterial.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceMaterial.baml
