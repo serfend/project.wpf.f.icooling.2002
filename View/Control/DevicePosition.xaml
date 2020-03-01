@@ -13,8 +13,6 @@
 			<GroupBox
 				pu:GroupBoxHelper.HeaderPadding="0 -2 0 0"
 				Header="2、柜体位置"
-				VerticalAlignment="Center"
-				HorizontalAlignment="Center"
 				pu:GroupBoxHelper.CornerRadius="1"
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
 				<ItemsControl Name="items" ItemsSource="{Binding}">

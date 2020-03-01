@@ -8,6 +8,11 @@
              mc:Ignorable="d"
              d:DesignHeight="720" d:DesignWidth="1000">
 	<Grid>
+		<Grid.Resources>
+			<Style TargetType="{x:Type Grid}">
+				<Setter Property="Margin" Value="1" />
+			</Style>
+		</Grid.Resources>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="10*"></RowDefinition>
 			<RowDefinition Height="30*"></RowDefinition>
@@ -31,6 +36,13 @@
 			</Grid.ColumnDefinitions>
 			<control:DevicePosition Grid.Column="0" DataContext="{Binding Device.Positions}" />
 			<Image Grid.Column="1" Source="/Resources/logo.png" />
+		</Grid>
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="55*"></ColumnDefinition>
+				<ColumnDefinition Width="45*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<control:DeviceInstallPosition Grid.Column="0" DataContext="{Binding Device.InstallPositions}" />
 		</Grid>
 	</Grid>
 </UserControl>

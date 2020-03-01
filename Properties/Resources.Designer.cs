@@ -90,6 +90,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
+        public static byte[] device_installPosition {
+            get {
+                object obj = ResourceManager.GetObject("device_installPosition", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
         public static byte[] device_position {
             get {
                 object obj = ResourceManager.GetObject("device_position", resourceCulture);

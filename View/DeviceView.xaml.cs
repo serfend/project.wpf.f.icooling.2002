@@ -29,15 +29,19 @@ namespace project.wpf.f.icooling._2002.View
 		public DeviceView()
 		{
 			var f = Encoding.UTF8.GetString(Properties.Resources.device_position);
-			var list = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(f);
-			foreach (var i in list) i.Img = $"/Resources/{i.Img}";
+			var Positions = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(f);
+			foreach (var i in Positions) i.Img = $"/Resources/{i.Img}";
+
+			f = Encoding.UTF8.GetString(Properties.Resources.device_installPosition);
+			var InstallPositions = JsonConvert.DeserializeObject<ObservableCollection<DeviceInstallPosition>>(f);
 			DeviceViewModel viewModel = new DeviceViewModel()
 			{
 				Device = new Model.Device.Device()
 				{
 					Name = this.GetType().Name.Replace("View", ""),
 					Size = new Model.Device.DeviceSize(),
-					Positions = list
+					Positions = Positions,
+					InstallPositions = InstallPositions
 				}
 			};
 			DataContext = viewModel;

@@ -94,6 +94,9 @@
     <Compile Include="View\CalendarView.xaml.cs">
       <DependentUpon>CalendarView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Control\DeviceInstallPosition.xaml.cs">
+      <DependentUpon>DeviceInstallPosition.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Control\DevicePosition.xaml.cs">
       <DependentUpon>DevicePosition.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\Control\DeviceInstallPosition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Control\DevicePosition.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +162,7 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="packages.config" />
+    <Resource Include="Resources\device.installPosition.json" />
     <Resource Include="Resources\device.position.json" />
   </ItemGroup>
   <ItemGroup>
