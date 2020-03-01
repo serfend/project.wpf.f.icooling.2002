@@ -118,6 +118,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
+        ///   查找类似 安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）
+        ///              柜内电子元器件总功率（W） 的本地化字符串。
+        /// </summary>
+        public static string DevicePowerDescription {
+            get {
+                return ResourceManager.GetString("DevicePowerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 123 的本地化字符串。
         /// </summary>
         public static string IsSundayFirst {
@@ -236,10 +246,29 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap positionLogo {
+            get {
+                object obj = ResourceManager.GetObject("positionLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap Splash {
             get {
                 object obj = ResourceManager.GetObject("Splash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字 的本地化字符串。
+        /// </summary>
+        public static string TemperatureDifferenceDescription {
+            get {
+                return ResourceManager.GetString("TemperatureDifferenceDescription", resourceCulture);
             }
         }
         

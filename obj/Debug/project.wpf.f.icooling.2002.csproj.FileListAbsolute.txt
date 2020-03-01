@@ -44,3 +44,9 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceInstallPosition.baml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceMaterial.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceMaterial.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\TemperatureDifference.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\TemperatureDifference.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceFinalResult.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceFinalResult.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DevicePower.g.cs
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DevicePower.baml

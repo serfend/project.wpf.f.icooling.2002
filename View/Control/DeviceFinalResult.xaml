@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="project.wpf.f.icooling._2002.View.Control.DeviceFinalResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View.Control"
+			 xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+			 xmlns:res="clr-namespace:project.wpf.f.icooling._2002.Properties"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="500">
+	<Grid>
+		<GroupBox
+				Header="6、计算结果"
+				pu:GroupBoxHelper.CornerRadius="1"
+				pu:GroupBoxHelper.IsSplitLineVisible="True">
+			<Grid>
+				<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+					<StackPanel.Resources>
+						<Style TargetType="TextBox" BasedOn="{StaticResource InputText}"></Style>
+					</StackPanel.Resources>
+					<TextBox  pu:TextBoxHelper.Header="需要的制冷量 " Width="240" Text="{Binding RequireWind}"  pu:TextBoxHelper.Watermark="单位m³/s" />
+					<Button Content="计算"  VerticalAlignment="Center" Width="50"  Padding="5 5" Margin="10" Click="Button_Click" />
+				</StackPanel>
+			</Grid>
+		</GroupBox>
+	</Grid>
+</UserControl>

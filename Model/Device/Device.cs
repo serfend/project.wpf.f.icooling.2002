@@ -15,6 +15,13 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public ObservableCollection<DevicePosition> Positions { get; set; }
 		public ObservableCollection<DeviceInstallPosition> InstallPositions { get; set; }
 		public ObservableCollection<DeviceMaterial> Material { get; set; }
+		private double caculateResult;
+
+		public double CaculateResult
+		{
+			get { return caculateResult; }
+			set { this.Set(ref caculateResult, value); }
+		}
 
 		public string Name
 		{

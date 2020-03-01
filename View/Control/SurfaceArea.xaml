@@ -6,17 +6,6 @@
              xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View"
              xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
              mc:Ignorable="d">
-	<UserControl.Resources>
-		<Style x:Key="InputText"
-           TargetType="TextBox"
-           BasedOn="{StaticResource {x:Type TextBox}}">
-			<Setter Property="Margin"   Value="5,0,0,0" />
-			<Setter Property="pu:TextBoxHelper.Watermark" Value="单位/mm" />
-			<Setter Property="pu:TextBoxHelper.CornerRadius" Value="5" />
-			<Setter Property="Height" Value="30" />
-			<Setter Property="Width" Value="150" />
-		</Style>
-	</UserControl.Resources>
 	<Grid>
 		<GroupBox
 				Header="1、柜体尺寸"
@@ -25,23 +14,22 @@
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
 			<WrapPanel
 					Orientation="Horizontal">
+				<WrapPanel.Resources>
+					<Style TargetType="TextBox" BasedOn="{StaticResource InputText}" />
+				</WrapPanel.Resources>
 				<TextBox
 						Text="{Binding W}"
-						 Style="{StaticResource  InputText}"
                  pu:TextBoxHelper.Header="W " />
 				<TextBox
 						Text="{Binding H}"
-							 Style="{StaticResource  InputText}"
              pu:TextBoxHelper.Header="H " />
 				<TextBox
-						 Style="{StaticResource  InputText}"
 						Text="{Binding D}"
              pu:TextBoxHelper.Header="D " />
 				<GridSplitter Background="DarkGray" Margin="10 0" Width="2"></GridSplitter>
 				<TextBox
 						Margin="10 0"
 						VerticalAlignment="Center"
-						 Style="{StaticResource  InputText}"
 						pu:TextBoxHelper.Watermark="单位/m²"
 						Text="{Binding SurfaceArea}"
              pu:TextBoxHelper.Header="表面积 " />

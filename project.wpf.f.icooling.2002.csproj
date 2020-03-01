@@ -96,6 +96,9 @@
     <Compile Include="View\CalendarView.xaml.cs">
       <DependentUpon>CalendarView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Control\DeviceFinalResult.xaml.cs">
+      <DependentUpon>DeviceFinalResult.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Control\DeviceInstallPosition.xaml.cs">
       <DependentUpon>DeviceInstallPosition.xaml</DependentUpon>
     </Compile>
@@ -105,8 +108,14 @@
     <Compile Include="View\Control\DevicePosition.xaml.cs">
       <DependentUpon>DevicePosition.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Control\DevicePower.xaml.cs">
+      <DependentUpon>DevicePower.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Control\SingleOption.xaml.cs">
       <DependentUpon>SingleOption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Control\TemperatureDifference.xaml.cs">
+      <DependentUpon>TemperatureDifference.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\DeviceView.xaml.cs">
       <DependentUpon>DeviceView.xaml</DependentUpon>
@@ -137,6 +146,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\Control\DeviceFinalResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Control\DeviceInstallPosition.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -149,7 +162,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Control\DevicePower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Control\SingleOption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Control\TemperatureDifference.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,6 +234,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\position_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\positionLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

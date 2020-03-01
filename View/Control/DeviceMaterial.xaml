@@ -9,7 +9,7 @@
              d:DesignHeight="70" d:DesignWidth="450">
 	<Grid>
 		<GroupBox
-				Header="4、安装材料"
+				Header="4、柜体材料"
 				pu:GroupBoxHelper.CornerRadius="1"
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
 			<StackPanel Orientation="Horizontal">

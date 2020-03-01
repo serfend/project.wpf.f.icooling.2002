@@ -126,6 +126,10 @@
   <data name="CopyCode" xml:space="preserve">
     <value>123</value>
   </data>
+  <data name="DevicePowerDescription" xml:space="preserve">
+    <value>安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）
+              柜内电子元器件总功率（W）</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="device_installPosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\device.installPosition.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -831,6 +835,9 @@
   <data name="Palette" xml:space="preserve">
     <value>123</value>
   </data>
+  <data name="positionLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\positionLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="position_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -851,6 +858,9 @@
   </data>
   <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TemperatureDifferenceDescription" xml:space="preserve">
+    <value>这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字</value>
   </data>
   <data name="ThemeBrush" xml:space="preserve">
     <value>123</value>

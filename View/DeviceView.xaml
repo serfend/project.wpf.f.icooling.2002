@@ -35,7 +35,7 @@
 				<ColumnDefinition Width="3*" />
 			</Grid.ColumnDefinitions>
 			<control:DevicePosition Grid.Column="0" DataContext="{Binding Device.Positions}" />
-			<Image Grid.Column="1" Source="/Resources/logo.png" />
+			<Image Grid.Column="1" Source="/Resources/positionLogo.png" />
 		</Grid>
 		<Grid Grid.Row="2">
 			<Grid.ColumnDefinitions>
@@ -44,6 +44,21 @@
 			</Grid.ColumnDefinitions>
 			<control:DeviceInstallPosition Grid.Column="0" DataContext="{Binding Device.InstallPositions}" />
 			<control:DeviceMaterial Grid.Column="1" x:Name="DeviceMaterial" />
+		</Grid>
+		<Grid Grid.Row="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="55*"></ColumnDefinition>
+				<ColumnDefinition Width="45*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<control:TemperatureDifference Grid.Column="0" />
+			<control:DevicePower Grid.Column="1" />
+		</Grid>
+		<Grid Grid.Row="4">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="55*"></ColumnDefinition>
+				<ColumnDefinition Width="45*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<control:DeviceFinalResult Grid.Column="1" />
 		</Grid>
 	</Grid>
 </UserControl>
