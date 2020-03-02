@@ -79,10 +79,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controller\Helper.cs" />
+    <Compile Include="Extensions\CommonConvert.cs" />
     <Compile Include="Extensions\DeviceExtensions.cs" />
     <Compile Include="Model\Device\Device.cs" />
     <Compile Include="Model\Device\DeviceMaterial.cs" />
     <Compile Include="Model\Device\DevicePosition.cs" />
+    <Compile Include="Model\Device\DevicePower.cs" />
+    <Compile Include="Model\Device\DeviceTemperatureDifference.cs" />
     <Compile Include="Model\TabControllViewItemModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

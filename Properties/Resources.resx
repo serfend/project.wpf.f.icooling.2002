@@ -127,8 +127,7 @@
     <value>123</value>
   </data>
   <data name="DevicePowerDescription" xml:space="preserve">
-    <value>安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）
-              柜内电子元器件总功率（W）</value>
+    <value>安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）柜内电子元器件总功率（W）</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="device_installPosition" type="System.Resources.ResXFileRef, System.Windows.Forms">

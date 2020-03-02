@@ -16,6 +16,20 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public ObservableCollection<DeviceInstallPosition> InstallPositions { get; set; }
 		public ObservableCollection<DeviceMaterial> Material { get; set; }
 		private double caculateResult;
+		private DevicePower power;
+		private DeviceTemperatureDifference temperatureDifference;
+
+		public DeviceTemperatureDifference TemperatureDifference
+		{
+			get { return temperatureDifference; }
+			set { this.Set(ref temperatureDifference, value); }
+		}
+
+		public DevicePower Power
+		{
+			get { return power; }
+			set { this.Set(ref power, value); }
+		}
 
 		public double CaculateResult
 		{

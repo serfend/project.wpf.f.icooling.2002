@@ -6,8 +6,12 @@
              xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View.Control"
 			 xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
 			 xmlns:res="clr-namespace:project.wpf.f.icooling._2002.Properties"
+			 xmlns:convert="clr-namespace:project.wpf.f.icooling._2002.Extensions"
              mc:Ignorable="d"
              d:DesignHeight="200" d:DesignWidth="600">
+	<UserControl.Resources>
+		<convert:SimpleAddConverter x:Key="add" />
+	</UserControl.Resources>
 	<Grid>
 		<GroupBox
 				Header="5、温差"
@@ -33,7 +37,14 @@
 					</StackPanel>
 					<StackPanel>
 						<TextBlock Text="温差" />
-						<TextBox  Text="{Binding DiffTemperature}"   pu:TextBoxHelper.Watermark="单位/℃" TextWrapping="Wrap" />
+						<TextBox   pu:TextBoxHelper.Watermark="单位/℃" TextWrapping="Wrap">
+							<TextBox.Text>
+								<MultiBinding Converter="{StaticResource add}" ConverterParameter="-">
+									<Binding Path="MaxTemperature" />
+									<Binding Path="FitTemperature" />
+								</MultiBinding>
+							</TextBox.Text>
+						</TextBox>
 					</StackPanel>
 				</StackPanel>
 			</Grid>

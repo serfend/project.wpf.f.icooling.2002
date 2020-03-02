@@ -50,3 +50,4 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DeviceFinalResult.baml
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DevicePower.g.cs
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\View\Control\DevicePower.baml
+C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\project.wpf.f.icooling.2002.csprojAssemblyReference.cache

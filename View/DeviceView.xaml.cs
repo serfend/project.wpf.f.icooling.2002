@@ -42,7 +42,9 @@ namespace project.wpf.f.icooling._2002.View
 					Size = new Model.Device.DeviceSize(),
 					Positions = Positions,
 					InstallPositions = InstallPositions,
-					Material = Material
+					Material = Material,
+					Power = new DevicePower(),
+					TemperatureDifference = new DeviceTemperatureDifference()
 				}
 			};
 

@@ -50,8 +50,8 @@
 				<ColumnDefinition Width="55*"></ColumnDefinition>
 				<ColumnDefinition Width="45*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
-			<control:TemperatureDifference Grid.Column="0" />
-			<control:DevicePower Grid.Column="1" />
+			<control:TemperatureDifference DataContext="{Binding Device.TemperatureDifference}" Grid.Column="0" />
+			<control:DevicePower DataContext="{Binding Device.Power}" Grid.Column="1" />
 		</Grid>
 		<Grid Grid.Row="4">
 			<Grid.ColumnDefinitions>

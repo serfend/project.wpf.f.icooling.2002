@@ -2,10 +2,8 @@
 	<Application.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="pack://application:,,,/Panuon.UI.Silver;component/Control.xaml">
-				</ResourceDictionary>
-				<ResourceDictionary Source="pack://application:,,,/project.wpf.f.icooling.2002;component/Resources/style.xaml">
-				</ResourceDictionary>
+				<ResourceDictionary Source="pack://application:,,,/Panuon.UI.Silver;component/Control.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/project.wpf.f.icooling.2002;component/Resources/style.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</Application.Resources>

@@ -118,8 +118,7 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
-        ///   查找类似 安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）
-        ///              柜内电子元器件总功率（W） 的本地化字符串。
+        ///   查找类似 安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）柜内电子元器件总功率（W） 的本地化字符串。
         /// </summary>
         public static string DevicePowerDescription {
             get {
