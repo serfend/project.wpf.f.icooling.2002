@@ -1,11 +1,31 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace project.wpf.f.icooling._2002.Model.Device
 {
+	public class DevicePositions : ViewModelBase
+	{
+		private DevicePosition nowPosition;
+		private ObservableCollection<DevicePosition> positions;
+
+		public ObservableCollection<DevicePosition> Positions
+		{
+			get { return positions; }
+			set { this.Set(ref positions, value); }
+		}
+
+		public DevicePosition NowPosition
+		{
+			get { return nowPosition; }
+			set { this.Set(ref nowPosition, value); }
+		}
+	}
+
 	/// <summary>
 	/// 设备的放置位置
 	/// </summary>

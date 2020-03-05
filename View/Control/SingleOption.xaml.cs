@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,28 @@ namespace project.wpf.f.icooling._2002.View.Control
 	/// </summary>
 	public partial class SingleOption : UserControl
 	{
+		[Category("Behavior")]
+		public static readonly RoutedEvent OnCheckedEvent =
+  EventManager.RegisterRoutedEvent(
+  "SingleOptionOnChecked",
+  RoutingStrategy.Bubble,
+  typeof(RoutedEventHandler),
+  typeof(RadioButton));
+
+		public event RoutedEventHandler SingleOptionOnChecked
+		{
+			add { AddHandler(OnCheckedEvent, value); }
+			remove { RemoveHandler(OnCheckedEvent, value); }
+		}
+
 		public SingleOption()
 		{
 			InitializeComponent();
+		}
+
+		private void RadioButton_Checked(object sender, RoutedEventArgs e)
+		{
+			this.RaiseEvent(new RoutedEventArgs(OnCheckedEvent));
 		}
 	}
 }

@@ -37,7 +37,7 @@
 					</StackPanel>
 					<StackPanel>
 						<TextBlock Text="温差" />
-						<TextBox   pu:TextBoxHelper.Watermark="单位/℃" TextWrapping="Wrap">
+						<TextBox    pu:TextBoxHelper.Watermark="单位/℃" TextWrapping="Wrap">
 							<TextBox.Text>
 								<MultiBinding Converter="{StaticResource add}" ConverterParameter="-">
 									<Binding Path="MaxTemperature" />

@@ -16,7 +16,7 @@
 	<Grid>
 
 		<GroupBox
-				Header="6、连续的杂项功率"
+				Header="6、柜内电子元器件总的电功率"
 				pu:GroupBoxHelper.CornerRadius="1"
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
 			<Grid>

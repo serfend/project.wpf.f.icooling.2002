@@ -83,6 +83,7 @@
     <Compile Include="Extensions\DeviceExtensions.cs" />
     <Compile Include="Model\Device\Device.cs" />
     <Compile Include="Model\Device\DeviceMaterial.cs" />
+    <Compile Include="Model\Device\DeviceModuleSelect.cs" />
     <Compile Include="Model\Device\DevicePosition.cs" />
     <Compile Include="Model\Device\DevicePower.cs" />
     <Compile Include="Model\Device\DeviceTemperatureDifference.cs" />
@@ -98,6 +99,9 @@
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\CalendarView.xaml.cs">
       <DependentUpon>CalendarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Control\Atmospheric.xaml.cs">
+      <DependentUpon>Atmospheric.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Control\DeviceFinalResult.xaml.cs">
       <DependentUpon>DeviceFinalResult.xaml</DependentUpon>
@@ -120,8 +124,20 @@
     <Compile Include="View\Control\TemperatureDifference.xaml.cs">
       <DependentUpon>TemperatureDifference.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\DeviceView.xaml.cs">
-      <DependentUpon>DeviceView.xaml</DependentUpon>
+    <Compile Include="View\DeviceView\DeviceView水热交换器.xaml.cs">
+      <DependentUpon>DeviceView水热交换器.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeviceView\DeviceView加热器.xaml.cs">
+      <DependentUpon>DeviceView加热器.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeviceView\DeviceView_冷暖水蒸发器.xaml.cs">
+      <DependentUpon>DeviceView_冷暖水蒸发器.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeviceView\DeviceView_风扇过滤器.xaml.cs">
+      <DependentUpon>DeviceView_风扇过滤器.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeviceView\DeviceView_机柜空调.xaml.cs">
+      <DependentUpon>DeviceView_机柜空调.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SplashView.xaml.cs">
       <DependentUpon>SplashView.xaml</DependentUpon>
@@ -148,6 +164,10 @@
     <Page Include="View\CalendarView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Control\Atmospheric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Control\DeviceFinalResult.xaml">
       <SubType>Designer</SubType>
@@ -177,7 +197,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DeviceView.xaml">
+    <Page Include="View\DeviceView\DeviceView水热交换器.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DeviceView\DeviceView加热器.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DeviceView\DeviceView_冷暖水蒸发器.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DeviceView\DeviceView_风扇过滤器.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DeviceView\DeviceView_机柜空调.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -240,6 +276,39 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\positionLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\InstallDemo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\InstallDemo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\positionLogo_风扇空调.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_installdemo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_installdemo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_selector_for_client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_selector_for_client1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_selector_for_client2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\冷暖水交换器_selector_for_client3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\company_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\company_name.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -61,6 +61,15 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
+        ///   查找类似 这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是 的本地化字符串。
+        /// </summary>
+        public static string AtmosphericDescription {
+            get {
+                return ResourceManager.GetString("AtmosphericDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 123 的本地化字符串。
         /// </summary>
         public static string CalendarMode {
@@ -75,6 +84,26 @@ namespace project.wpf.f.icooling._2002.Properties {
         public static string CloseCodeViewer {
             get {
                 return ResourceManager.GetString("CloseCodeViewer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap company_logo {
+            get {
+                object obj = ResourceManager.GetObject("company_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap company_name {
+            get {
+                object obj = ResourceManager.GetObject("company_name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -123,6 +152,26 @@ namespace project.wpf.f.icooling._2002.Properties {
         public static string DevicePowerDescription {
             get {
                 return ResourceManager.GetString("DevicePowerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap InstallDemo_1 {
+            get {
+                object obj = ResourceManager.GetObject("InstallDemo_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap InstallDemo_2 {
+            get {
+                object obj = ResourceManager.GetObject("InstallDemo_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -255,6 +304,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap positionLogo_风扇空调 {
+            get {
+                object obj = ResourceManager.GetObject("positionLogo_风扇空调", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap Splash {
             get {
                 object obj = ResourceManager.GetObject("Splash", resourceCulture);
@@ -286,6 +345,66 @@ namespace project.wpf.f.icooling._2002.Properties {
         public static string ViewCode {
             get {
                 return ResourceManager.GetString("ViewCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_installdemo1 {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_installdemo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_installdemo2 {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_installdemo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_selector_for_client {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_selector_for_client", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_selector_for_client1 {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_selector_for_client1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_selector_for_client2 {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_selector_for_client2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap 冷暖水交换器_selector_for_client3 {
+            get {
+                object obj = ResourceManager.GetObject("冷暖水交换器_selector_for_client3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

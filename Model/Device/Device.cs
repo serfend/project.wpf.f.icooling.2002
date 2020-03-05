@@ -12,12 +12,26 @@ namespace project.wpf.f.icooling._2002.Model.Device
 	{
 		private DeviceSize size;
 		private string name;
-		public ObservableCollection<DevicePosition> Positions { get; set; }
+		private DevicePositions devicePositions;
+
+		public DevicePositions DevicePositions
+		{
+			get { return devicePositions; }
+			set { this.Set(ref devicePositions, value); }
+		}
+
 		public ObservableCollection<DeviceInstallPosition> InstallPositions { get; set; }
 		public ObservableCollection<DeviceMaterial> Material { get; set; }
 		private double caculateResult;
 		private DevicePower power;
 		private DeviceTemperatureDifference temperatureDifference;
+		private DeviceModuleSelect moduleSelect;
+
+		public DeviceModuleSelect ModuleSelect
+		{
+			get { return moduleSelect; }
+			set { this.Set(ref moduleSelect, value); }
+		}
 
 		public DeviceTemperatureDifference TemperatureDifference
 		{

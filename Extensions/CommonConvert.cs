@@ -25,24 +25,24 @@ namespace project.wpf.f.icooling._2002.Extensions
 	{
 		public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
 		{
-			double result = 0;
+			double result = System.Convert.ToDouble(values[0]);
 			parameter = parameter ?? "+";
 			switch (parameter)
 			{
 				case "+":
-					foreach (var i in values) result += System.Convert.ToDouble(i);
+					for (var i = 1; i < values.Length; i++) result += System.Convert.ToDouble(values[i]);
 					break;
 
 				case "-":
-					foreach (var i in values) result -= System.Convert.ToDouble(i);
+					for (var i = 1; i < values.Length; i++) result -= System.Convert.ToDouble(values[i]);
 					break;
 
 				case "*":
-					foreach (var i in values) result *= System.Convert.ToDouble(i);
+					for (var i = 1; i < values.Length; i++) result *= System.Convert.ToDouble(values[i]);
 					break;
 
 				case "/":
-					foreach (var i in values) result /= System.Convert.ToDouble(i);
+					for (var i = 1; i < values.Length; i++) result /= System.Convert.ToDouble(values[i]);
 					break;
 			}
 			return System.Convert.ToString(result);

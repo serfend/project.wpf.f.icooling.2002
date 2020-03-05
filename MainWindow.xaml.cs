@@ -42,7 +42,7 @@ namespace project.wpf.f.icooling._2002
 				Where(x => x.IsSubclassOf(typeof(UserControl))).ToList();
 			dynamicModules.ForEach(x =>
 			{
-				var newName = x.Name.Remove(x.Name.Length - 4);
+				var newName = x.Name;
 				_partialViewDic.Add(newName, x);
 			});
 		}
@@ -51,12 +51,12 @@ namespace project.wpf.f.icooling._2002
 		{
 			InitializeComponent();
 			var list = new ObservableCollection<TabControllViewItemModel>() {
-				new TabControllViewItemModel("主页","Splash","\uf05a"),
-				new TabControllViewItemModel("机柜空调","Device","\uf05a"),
-				new TabControllViewItemModel("风扇过滤器","Calendar","\uf05a"),
-				new TabControllViewItemModel("加热器","tag3","\uf05a"),
-				new TabControllViewItemModel("水热交换器","tag3","\uf05a"),
-				new TabControllViewItemModel("冷凝水蒸发器","tag3","\uf05a"),
+				new TabControllViewItemModel("主页","SplashView","\uf05a"),
+				new TabControllViewItemModel("机柜空调","DeviceView机柜空调","\uf05a"),
+				new TabControllViewItemModel("风扇过滤器","DeviceView风扇过滤器","\uf05a"),
+				new TabControllViewItemModel("加热器","DeviceView冷暖水蒸发器","\uf05a"),
+				new TabControllViewItemModel("水热交换器","DeviceView水热交换器","\uf05a"),
+				new TabControllViewItemModel("冷凝水蒸发器","DeviceView冷暖水蒸发器","\uf05a"),
 			};
 			ViewModel = new MainWindowViewModel(list);
 			DataContext = ViewModel;
@@ -74,7 +74,7 @@ namespace project.wpf.f.icooling._2002
 		private void NavMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			var selectedItem = NavMenu.SelectedItem as TabControllViewItemModel;
-			var loadPageName = _partialViewDic.ContainsKey(selectedItem.Tag) ? selectedItem.Tag : "Splash";
+			var loadPageName = _partialViewDic.ContainsKey(selectedItem.Tag) ? selectedItem.Tag : "SplashView";
 			if (selectedItem.Content == null)
 				selectedItem.Content = Activator.CreateInstance(_partialViewDic[loadPageName]);
 		}

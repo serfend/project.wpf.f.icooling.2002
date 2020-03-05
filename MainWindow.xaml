@@ -24,18 +24,22 @@
 			<RowDefinition Height="90*"></RowDefinition>
 		</Grid.RowDefinitions>
 		<WrapPanel
-			HorizontalAlignment="Left"
+			HorizontalAlignment="Stretch"
 			Grid.Row="0"
-			Width="800">
+			Background="#D7DEE2">
 			<Image Margin="20 0" Source="/Resources/logo.png"></Image>
-			<TextBlock VerticalAlignment="Center" FontSize="30"  Text="企业LOGO/名称  佐志温控"></TextBlock>
+			<!--<TextBlock VerticalAlignment="Center" FontSize="30"  Text="企业LOGO/名称  佐志温控"></TextBlock>-->
+			<Image Source="Resources/company_name.png" />
 		</WrapPanel>
 		<TabControl x:Name="NavMenu"
 			 Grid.Row="1"
 			  BorderBrush="Transparent"
+				pu:TabControlHelper.HeaderPanelBackground="#D7DEE2"
 			  pu:TabControlHelper.SelectedForeground="#49A9C0"
 			  SelectionChanged="NavMenu_SelectionChanged"
+					SelectedIndex="0"
 			  ItemsSource="{Binding MenuItems}">
+
 			<TabControl.ItemContainerStyle>
 				<Style TargetType="{x:Type TabItem}"
                            BasedOn="{StaticResource {x:Type TabItem}}">

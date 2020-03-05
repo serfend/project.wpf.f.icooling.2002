@@ -24,9 +24,9 @@ namespace project.wpf.f.icooling._2002.View
 	/// <summary>
 	/// DeviceView.xaml 的交互逻辑
 	/// </summary>
-	public partial class DeviceView : UserControl
+	public partial class DeviceView风扇过滤器 : UserControl
 	{
-		public DeviceView()
+		public DeviceView风扇过滤器()
 		{
 			InitializeComponent();
 
@@ -40,7 +40,11 @@ namespace project.wpf.f.icooling._2002.View
 				{
 					Name = this.GetType().Name.Replace("View", ""),
 					Size = new Model.Device.DeviceSize(),
-					Positions = Positions,
+					DevicePositions = new DevicePositions()
+					{
+						NowPosition = Positions[0],
+						Positions = Positions
+					},
 					InstallPositions = InstallPositions,
 					Material = Material,
 					Power = new DevicePower(),

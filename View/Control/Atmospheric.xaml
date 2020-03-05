@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="project.wpf.f.icooling._2002.View.Control.Atmospheric"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:project.wpf.f.icooling._2002.View.Control"
+			 xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+			 xmlns:res="clr-namespace:project.wpf.f.icooling._2002.Properties"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="600">
+	<Grid>
+		<GroupBox
+				Header="7、气压系数"
+				pu:GroupBoxHelper.CornerRadius="1"
+				pu:GroupBoxHelper.IsSplitLineVisible="True">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="5*"></RowDefinition>
+					<RowDefinition Height="5*"></RowDefinition>
+				</Grid.RowDefinitions>
+				<StackPanel Grid.Row="0">
+					<TextBlock Text="{x:Static  res:Resources.AtmosphericDescription}" />
+				</StackPanel>
+				<StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+					<StackPanel.Resources>
+						<Style TargetType="TextBox" BasedOn="{StaticResource InputText}"></Style>
+					</StackPanel.Resources>
+					<StackPanel>
+						<TextBlock Text="高度（海平面以上）米" />
+						<ComboBox Margin="0 0 30 0"
+					  pu:ComboBoxHelper.Header=" "
+					  Name="ComboBox"
+					  SelectionChanged="ComboBox_SelectionChanged"
+					  DisplayMemberPath="Description"
+					  SelectedValuePath="Id"
+					  ItemsSource="{Binding}"
+					  ></ComboBox>
+					</StackPanel>
+					<StackPanel>
+						<TextBlock Text="气压系数" />
+						<TextBox   Width="240" Text="{Binding RequireWind}"  pu:TextBoxHelper.Watermark="m³/Wh" />
+					</StackPanel>
+				</StackPanel>
+			</Grid>
+		</GroupBox>
+	</Grid>
+</UserControl>
