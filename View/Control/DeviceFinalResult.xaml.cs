@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.wpf.f.icooling._2002.Model.Device;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,9 @@ namespace project.wpf.f.icooling._2002.View.Control
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("计算");
+			//MessageBox.Show("计算");
+			var t = this.DataContext as Device;
+			t.CaculateRequireWind();
 		}
 	}
 }

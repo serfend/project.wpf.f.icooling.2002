@@ -46,7 +46,7 @@
 				<ColumnDefinition Width="45*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
 			<control:TemperatureDifference DataContext="{Binding Device.TemperatureDifference}" Grid.Column="0" />
-			<control:DevicePower DataContext="{Binding Device.Power}" Grid.Column="1" />
+			<control:DevicePower DataContext="{Binding Device}" Grid.Column="1" />
 		</Grid>
 		<Grid Grid.Row="4">
 			<Grid.ColumnDefinitions>

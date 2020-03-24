@@ -27,7 +27,7 @@ namespace project.wpf.f.icooling._2002.View.Control
   "SingleOptionOnChecked",
   RoutingStrategy.Bubble,
   typeof(RoutedEventHandler),
-  typeof(RadioButton));
+  typeof(SingleOption));
 
 		public event RoutedEventHandler SingleOptionOnChecked
 		{

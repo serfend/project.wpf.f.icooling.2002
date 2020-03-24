@@ -12,6 +12,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 	{
 		private DevicePosition nowPosition;
 		private ObservableCollection<DevicePosition> positions;
+		public Device Parent { get; set; }
 
 		public ObservableCollection<DevicePosition> Positions
 		{
@@ -22,7 +23,15 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public DevicePosition NowPosition
 		{
 			get { return nowPosition; }
-			set { this.Set(ref nowPosition, value); }
+			set { this.Set(ref nowPosition, value); ResetSurfaceArea(); }
+		}
+
+		private void ResetSurfaceArea()
+		{
+			if (Parent != null)
+			{
+				Parent.Size.ResetSurfaceArea();
+			}
 		}
 	}
 
@@ -31,10 +40,17 @@ namespace project.wpf.f.icooling._2002.Model.Device
 	/// </summary>
 	public class DevicePosition : DescriptionItem
 	{
+		private const string res = "/Resources/";
+		private string img;
+		private string hugeImg;
+		public string SurfaceCaculateMethod { get; set; }
+
 		/// <summary>
 		/// 图标路径，需要使用资源文件
 		/// </summary>
-		public string Img { get; set; }
+		public string Img { get => img.Contains(res) ? img : $"{res}{img}"; set => img = value; }
+
+		public string HugeImg { get => hugeImg.Contains(res) ? hugeImg : $"{res}{hugeImg}"; set => hugeImg = value; }
 	}
 
 	/// <summary>

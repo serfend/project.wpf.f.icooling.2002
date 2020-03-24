@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon-20200227092450997.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>packages\CommonServiceLocator.2.0.2\lib\net47\CommonServiceLocator.dll</HintPath>
@@ -81,6 +84,7 @@
     <Compile Include="Controller\Helper.cs" />
     <Compile Include="Extensions\CommonConvert.cs" />
     <Compile Include="Extensions\DeviceExtensions.cs" />
+    <Compile Include="Model\Device\Atmospheric.cs" />
     <Compile Include="Model\Device\Device.cs" />
     <Compile Include="Model\Device\DeviceMaterial.cs" />
     <Compile Include="Model\Device\DeviceModuleSelect.cs" />
@@ -231,6 +235,7 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Resources\Atmospheric.json" />
     <Resource Include="Resources\device.material.json" />
     <Resource Include="Resources\device.installPosition.json" />
     <Resource Include="Resources\device.position.json" />
@@ -275,7 +280,7 @@
     <Resource Include="Resources\position_6.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\positionLogo.png" />
+    <Resource Include="Resources\positionLogo_风扇过滤器.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\InstallDemo_1.png" />
@@ -284,7 +289,7 @@
     <Resource Include="Resources\InstallDemo_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\positionLogo_风扇空调.png" />
+    <Resource Include="Resources\positionLogo_加热器.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\冷暖水交换器_installdemo1.png" />
@@ -309,6 +314,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\company_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="favicon-20200227092450997.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_5_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_6_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_1_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_2_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_3_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\position_4_huge.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

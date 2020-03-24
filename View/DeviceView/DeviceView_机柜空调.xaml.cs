@@ -31,14 +31,15 @@ namespace project.wpf.f.icooling._2002.View
 			InitializeComponent();
 
 			var Positions = JsonConvert.DeserializeObject<ObservableCollection<DevicePosition>>(Encoding.UTF8.GetString(Properties.Resources.device_position));
-			foreach (var i in Positions) i.Img = $"/Resources/{i.Img}";
 			var InstallPositions = JsonConvert.DeserializeObject<ObservableCollection<DeviceInstallPosition>>(Encoding.UTF8.GetString(Properties.Resources.device_installPosition));
 			var Material = JsonConvert.DeserializeObject<ObservableCollection<DeviceMaterial>>(Encoding.UTF8.GetString(Properties.Resources.device_material));
+			var Atmospheric = JsonConvert.DeserializeObject<ObservableCollection<AtmosphericOption>>(Encoding.UTF8.GetString(Properties.Resources.Atmospheric));
+
 			DeviceViewModel viewModel = new DeviceViewModel()
 			{
 				Device = new Model.Device.Device()
 				{
-					Name = this.GetType().Name.Replace("View", ""),
+					Name = this.GetType().Name.Replace("DeviceView", ""),
 					Size = new Model.Device.DeviceSize(),
 					DevicePositions = new DevicePositions()
 					{
@@ -46,18 +47,26 @@ namespace project.wpf.f.icooling._2002.View
 						Positions = Positions
 					},
 					InstallPositions = InstallPositions,
-					Material = Material,
-					Power = new DevicePower(),
-					TemperatureDifference = new DeviceTemperatureDifference()
+					DeviceMaterial = new DeviceMaterialViewModel()
+					{
+						Members = Material,
+						NowSelect = new DeviceMaterial()
+					},
+					Power = new DevicePower()
+					{
+						PowerInputLabelText = "柜内电气总功率"
+					},
+					TemperatureDifference = new DeviceTemperatureDifference(),
+					Atmospheric = new Atmospheric()
+					{
+						Atmospherics = Atmospheric,
+						NowSelect = Atmospheric[0]
+					}
 				}
 			};
 
 			//初始化设备材料的ViewModel
-			DeviceMaterial.DataContext = new DeviceMaterialViewModel()
-			{
-				Members = Material,
-				NowSelect = new DeviceMaterial()
-			};
+			DeviceMaterial.DataContext = viewModel.Device.DeviceMaterial;
 
 			DataContext = viewModel;
 			switch (Helper.Tier)

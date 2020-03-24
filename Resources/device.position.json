@@ -1,32 +1,44 @@
 [
   {
-    "id": 1,
-    "img": "position_1.jpg",
-    "description": "单控制柜，各个面自由立放"
+	"id": 1,
+	"img": "position_1.jpg",
+	"hugeImg": "position_1_huge.jpg",
+	"description": "单控制柜，各个面自由立放",
+	"SurfaceCaculateMethod": "(W-5)*(H-5)*2+(H-5)*(D-5)*2+(W-5)*(D-5)"
   },
   {
-    "id": 2,
-    "img": "position_2.jpg",
-    "description": "单控制柜靠墙放置"
+	"id": 2,
+	"img": "position_2.jpg",
+	"hugeImg": "position_2_huge.jpg",
+	"description": "单控制柜靠墙放置",
+	"SurfaceCaculateMethod": "(W-5)*(H-5)+(H-5)*(D-5)*2+(W-5)*(D-5)"
   },
   {
-    "id": 3,
-    "img": "position_3.jpg",
-    "description": "一套柜中第一个或最后一个控制柜，自由立放"
+	"id": 3,
+	"img": "position_3.jpg",
+	"hugeImg": "position_3_huge.jpg",
+	"description": "一套柜中第一个或最后一个控制柜，自由立放",
+	"SurfaceCaculateMethod": "(W-5)*(H-5)*2+(H-5)*(D-5)+(W-5)*(D-5)"
   },
   {
-    "id": 4,
-    "img": "position_4.jpg",
-    "description": "一套柜中南第一个或最后一个控制柜，靠墙"
+	"id": 4,
+	"img": "position_4.jpg",
+	"hugeImg": "position_4_huge.jpg",
+	"description": "一套柜中第一个或最后一个控制柜,靠墙",
+	"SurfaceCaculateMethod": "((W-5)*(H-5)+(H-5)*(D-5)+(W-5)*(D-5))*1.35"
   },
   {
-    "id": 5,
-    "img": "position_5.jpg",
-    "description": "一套柜中的控制柜，自由立放"
+	"id": 5,
+	"img": "position_5.jpg",
+	"hugeImg": "position_5_huge.jpg",
+	"description": "一套柜中的控制柜，自由立放",
+	"SurfaceCaculateMethod": "((W-5)*(H-5)*2+(W-5)*(D-5))*1.15"
   },
   {
-    "id": 6,
-    "img": "position_6.jpg",
-    "description": "一套柜中的控制柜，靠墙"
-  },
+	"id": 6,
+	"img": "position_6.jpg",
+	"hugeImg": "position_6_huge.jpg",
+	"description": "一套柜中的控制柜，靠墙",
+	"SurfaceCaculateMethod": "((W-5)*(H-5)+(H-5)*(D-5))*1.7"
+  }
 ]

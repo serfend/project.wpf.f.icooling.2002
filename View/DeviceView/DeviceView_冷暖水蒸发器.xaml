@@ -82,9 +82,10 @@
 								<RadioButton
 												 GroupName="3f9etp" Content="标准安装（B）"
 									Checked="SelectInstallMethod"
+									IsChecked="True"
 										  pu:RadioButtonHelper.RadioButtonStyle="Switch">
 								</RadioButton>
-								<RadioButton
+								<!--<RadioButton
 												 GroupName="3f9etp" Content="基面安装（P）"
 									Checked="SelectInstallMethod"
 										  pu:RadioButtonHelper.RadioButtonStyle="Switch">
@@ -93,7 +94,7 @@
 												 GroupName="3f9etp" Content="侧面安装（S）"
 									Checked="SelectInstallMethod"
 										  pu:RadioButtonHelper.RadioButtonStyle="Switch">
-								</RadioButton>
+								</RadioButton>-->
 							</WrapPanel>
 							<Image Source="/Resources/冷暖水交换器_installdemo1.png" />
 							<Image Source="/Resources/冷暖水交换器_installdemo2.png" />

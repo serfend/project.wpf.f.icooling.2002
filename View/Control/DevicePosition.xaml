@@ -35,6 +35,6 @@
 				</ItemsControl>
 			</GroupBox>
 		</StackPanel>
-		<Image Grid.Column="1" Source="{Binding NowPosition.Img}" />
+		<Image Grid.Column="1" Source="{Binding NowPosition.HugeImg}" />
 	</Grid>
 </UserControl>

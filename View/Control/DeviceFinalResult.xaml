@@ -10,7 +10,7 @@
              d:DesignHeight="200" d:DesignWidth="500">
 	<Grid>
 		<GroupBox
-				Header="6、计算结果"
+				Header="计算结果"
 				pu:GroupBoxHelper.CornerRadius="1"
 				pu:GroupBoxHelper.IsSplitLineVisible="True">
 			<Grid>
@@ -18,7 +18,7 @@
 					<StackPanel.Resources>
 						<Style TargetType="TextBox" BasedOn="{StaticResource InputText}"></Style>
 					</StackPanel.Resources>
-					<TextBox  pu:TextBoxHelper.Header="需要的制冷量 " Width="240" Text="{Binding RequireWind}"  pu:TextBoxHelper.Watermark="单位m³/s" />
+					<TextBox  pu:TextBoxHelper.Header="{Binding RequireWindDescription}" Width="240" Text="{Binding RequireWind}"  pu:TextBoxHelper.Watermark="单位m³/s" />
 					<Button Content="计算"  VerticalAlignment="Center" Width="50"  Padding="5 5" Margin="10" Click="Button_Click" />
 				</StackPanel>
 			</Grid>

@@ -61,6 +61,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        public static byte[] Atmospheric {
+            get {
+                object obj = ResourceManager.GetObject("Atmospheric", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是 的本地化字符串。
         /// </summary>
         public static string AtmosphericDescription {
@@ -244,9 +254,29 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap position_1_huge {
+            get {
+                object obj = ResourceManager.GetObject("position_1_huge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap position_2 {
             get {
                 object obj = ResourceManager.GetObject("position_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_2_huge {
+            get {
+                object obj = ResourceManager.GetObject("position_2_huge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -264,9 +294,29 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap position_3_huge {
+            get {
+                object obj = ResourceManager.GetObject("position_3_huge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap position_4 {
             get {
                 object obj = ResourceManager.GetObject("position_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap position_4_huge {
+            get {
+                object obj = ResourceManager.GetObject("position_4_huge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -284,6 +334,16 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap position_5_huge {
+            get {
+                object obj = ResourceManager.GetObject("position_5_huge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap position_6 {
             get {
                 object obj = ResourceManager.GetObject("position_6", resourceCulture);
@@ -294,19 +354,9 @@ namespace project.wpf.f.icooling._2002.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        public static System.Drawing.Bitmap positionLogo {
+        public static System.Drawing.Bitmap position_6_huge {
             get {
-                object obj = ResourceManager.GetObject("positionLogo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
-        public static System.Drawing.Bitmap positionLogo_风扇空调 {
-            get {
-                object obj = ResourceManager.GetObject("positionLogo_风扇空调", resourceCulture);
+                object obj = ResourceManager.GetObject("position_6_huge", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.wpf.f.icooling._2002.Model.Device;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,10 @@ namespace project.wpf.f.icooling._2002.View.Control
 
 		private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
+			var c = sender as ComboBox;
+			var i = c.SelectedItem as AtmosphericOption;
+			var d = DataContext as Model.Device.Atmospheric;
+			d.NowSelect = i;
 		}
 	}
 }

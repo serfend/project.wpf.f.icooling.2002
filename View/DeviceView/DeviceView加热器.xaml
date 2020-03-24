@@ -30,12 +30,7 @@
 			<TextBlock Text="{Binding Device.Name}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
 		</Grid>
 		<Grid Grid.Row="1">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="7*" />
-				<ColumnDefinition Width="3*" />
-			</Grid.ColumnDefinitions>
-			<control:DevicePosition Grid.Column="0" DataContext="{Binding Device.Positions}" />
-			<Image Grid.Column="1" Source="/Resources/positionLogo.png" />
+			<control:DevicePosition  DataContext="{Binding Device.DevicePositions}" />
 		</Grid>
 		<Grid Grid.Row="2">
 			<Grid.ColumnDefinitions>
@@ -51,13 +46,14 @@
 				<ColumnDefinition Width="45*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
 			<control:TemperatureDifference DataContext="{Binding Device.TemperatureDifference}" Grid.Column="0" />
-			<control:DevicePower DataContext="{Binding Device.Power}" Grid.Column="1" />
+			<control:DevicePower DataContext="{Binding Device}" Grid.Column="1" />
 		</Grid>
 		<Grid Grid.Row="4">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="55*"></ColumnDefinition>
 				<ColumnDefinition Width="45*"></ColumnDefinition>
 			</Grid.ColumnDefinitions>
+			<control:Atmospheric DataContext="{Binding Device.Atmospheric}" Grid.Column="0" />
 			<control:DeviceFinalResult DataContext="{Binding Device}" Grid.Column="1" />
 		</Grid>
 	</Grid>

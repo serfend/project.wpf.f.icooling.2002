@@ -54,7 +54,7 @@ namespace project.wpf.f.icooling._2002
 				new TabControllViewItemModel("主页","SplashView","\uf05a"),
 				new TabControllViewItemModel("机柜空调","DeviceView机柜空调","\uf05a"),
 				new TabControllViewItemModel("风扇过滤器","DeviceView风扇过滤器","\uf05a"),
-				new TabControllViewItemModel("加热器","DeviceView冷暖水蒸发器","\uf05a"),
+				new TabControllViewItemModel("加热器","DeviceView加热器","\uf05a"),
 				new TabControllViewItemModel("水热交换器","DeviceView水热交换器","\uf05a"),
 				new TabControllViewItemModel("冷凝水蒸发器","DeviceView冷暖水蒸发器","\uf05a"),
 			};

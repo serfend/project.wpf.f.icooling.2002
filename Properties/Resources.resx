@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Atmospheric" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atmospheric.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="AtmosphericDescription" xml:space="preserve">
     <value>这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是</value>
   </data>
@@ -126,7 +130,6 @@
   <data name="CloseCodeViewer" xml:space="preserve">
     <value>123</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="company_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\company_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -849,29 +852,41 @@
   <data name="Palette" xml:space="preserve">
     <value>123</value>
   </data>
-  <data name="positionLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\positionLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="positionLogo_风扇空调" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\positionLogo_风扇空调.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="position_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="position_1_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_1_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="position_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="position_2_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_2_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="position_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="position_3_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_3_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="position_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="position_4_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_4_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="position_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="position_5_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_5_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="position_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\position_6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="position_6_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\position_6_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
