@@ -81,7 +81,7 @@ namespace project.wpf.f.icooling._2002.View
 			switch (item.Tag)
 			{
 				case "1":
-					viewModel.Device.ModuleSelect.MoudleName = "WL3003B";
+					viewModel.Device.ModuleSelect.MoudleName = "KB3003B";
 					break;
 
 				case "2":
@@ -90,7 +90,7 @@ namespace project.wpf.f.icooling._2002.View
 					break;
 
 				case "3":
-					viewModel.Device.ModuleSelect.MoudleName = "WL3008B";
+					viewModel.Device.ModuleSelect.MoudleName = "KB3008B";
 
 					break;
 			}

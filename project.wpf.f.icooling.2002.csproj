@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>favicon-20200227092450997.ico</ApplicationIcon>
+    <ApplicationIcon>request2.logoMain.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
@@ -97,6 +97,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="reg.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="ViewModel\DeviceMaterialViewModel.cs" />
     <Compile Include="ViewModel\DeviceViewModel.cs" />
@@ -235,7 +236,7 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="packages.config" />
-    <None Include="Resources\Atmospheric.json" />
+    <Resource Include="Resources\Atmospheric.json" />
     <Resource Include="Resources\device.material.json" />
     <Resource Include="Resources\device.installPosition.json" />
     <Resource Include="Resources\device.position.json" />
@@ -335,6 +336,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\position_4_huge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="request2.logoMain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\request2.splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\request2.logoMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\request2.logoHead.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

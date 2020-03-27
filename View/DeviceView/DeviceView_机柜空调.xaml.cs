@@ -39,6 +39,8 @@ namespace project.wpf.f.icooling._2002.View
 			{
 				Device = new Model.Device.Device()
 				{
+					RequireWindDescription="需要的制冷量/W",
+					RequireWindDescriptionUnit="单位/W",
 					Name = this.GetType().Name.Replace("DeviceView", ""),
 					Size = new Model.Device.DeviceSize(),
 					DevicePositions = new DevicePositions()
@@ -54,7 +56,7 @@ namespace project.wpf.f.icooling._2002.View
 					},
 					Power = new DevicePower()
 					{
-						PowerInputLabelText = "柜内电气总功率"
+						PowerInputLabelText = "柜内电气总功率/W"
 					},
 					TemperatureDifference = new DeviceTemperatureDifference(),
 					Atmospheric = new Atmospheric()

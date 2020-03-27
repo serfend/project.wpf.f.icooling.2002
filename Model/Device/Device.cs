@@ -118,6 +118,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		private double caculatePower;
 		private double requireWind;
 		private string requireWindDescription = "需要的制冷量";
+		private string requireWindDescriptionUnit = "单位m³/s";
 
 		private DevicePower power;
 		private DeviceTemperatureDifference temperatureDifference;
@@ -152,6 +153,12 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		{
 			get { return requireWindDescription; }
 			set { this.Set(ref requireWindDescription, value); }
+		}
+
+		public string RequireWindDescriptionUnit
+		{
+			get { return requireWindDescriptionUnit; }
+			set { this.Set(ref requireWindDescriptionUnit, value); }
 		}
 
 		public Device()

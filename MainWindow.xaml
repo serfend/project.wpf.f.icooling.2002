@@ -25,17 +25,23 @@
 		</Grid.RowDefinitions>
 		<WrapPanel
 			HorizontalAlignment="Stretch"
-			Grid.Row="0"
-			Background="#D7DEE2">
-			<Image Margin="20 0" Source="/Resources/logo.png"></Image>
+			Grid.Row="0">
+			<WrapPanel.Background>
+				<LinearGradientBrush StartPoint="0.4,0" EndPoint="1,0">
+					<GradientStop Offset="0" Color="#111111"></GradientStop>
+					<GradientStop Offset="1" Color="#ffffff"></GradientStop>
+				</LinearGradientBrush>
+			</WrapPanel.Background>
+			<Image Margin="0 0" Source="/Resources/request2.logoMain.png"></Image>
 			<!--<TextBlock VerticalAlignment="Center" FontSize="30"  Text="企业LOGO/名称  佐志温控"></TextBlock>-->
-			<Image Source="Resources/company_name.png" />
+			<!--<Image Source="Resources/company_name.png" />-->
 		</WrapPanel>
 		<TabControl x:Name="NavMenu"
 			 Grid.Row="1"
 			  BorderBrush="Transparent"
-				pu:TabControlHelper.HeaderPanelBackground="#D7DEE2"
-			  pu:TabControlHelper.SelectedForeground="#49A9C0"
+				pu:TabControlHelper.HeaderPanelBackground="#000000"
+			  pu:TabControlHelper.SelectedForeground="#ffffff"
+
 			  SelectionChanged="NavMenu_SelectionChanged"
 					SelectedIndex="0"
 			  ItemsSource="{Binding MenuItems}">
@@ -49,6 +55,7 @@
                                 Value="{Binding Icon}" />
 					<Setter Property="Header" Value="{Binding Header}" />
 					<Setter Property="Content" Value="{Binding Content}" />
+					<Setter Property="Foreground" Value="White" />
 				</Style>
 			</TabControl.ItemContainerStyle>
 		</TabControl>

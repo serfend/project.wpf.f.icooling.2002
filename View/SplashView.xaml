@@ -12,6 +12,6 @@
 			<RowDefinition Height="70*" />
 			<RowDefinition Height="15*" />
 		</Grid.RowDefinitions>
-		<Image Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/company_logo.jpg"></Image>
+		<Image Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Resources/request2.splash.jpg"></Image>
 	</Grid>
 </UserControl>

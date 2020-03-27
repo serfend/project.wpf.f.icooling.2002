@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -16,6 +17,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DotNet4.Utilities.UtilReg;
+using Newtonsoft.Json;
 using Panuon.UI.Silver;
 using project.wpf.f.icooling._2002.Model;
 using project.wpf.f.icooling._2002.ViewModel;
@@ -34,17 +37,40 @@ namespace project.wpf.f.icooling._2002
 		{
 			//用于初始化所有子视图
 			_partialViewDic = new Dictionary<string, Type>();
-			var allAssemblies = AppDomain.CurrentDomain.GetAssemblies();
 			var cur_as = Assembly.GetExecutingAssembly();
 			var items = cur_as.GetTypes();
 			var dynamicModules = items.
-				Where(x => x.Namespace.StartsWith("project.wpf.f.icooling._2002.View")).
-				Where(x => x.IsSubclassOf(typeof(UserControl))).ToList();
+				Where(x => x != null && x.Namespace != null && x.Namespace.StartsWith("project.wpf.f.icooling._2002.View")).ToList();
+			dynamicModules = dynamicModules.Where(x => x.IsSubclassOf(typeof(UserControl))).ToList();
 			dynamicModules.ForEach(x =>
 			{
 				var newName = x.Name;
 				_partialViewDic.Add(newName, x);
 			});
+			new Thread(() =>
+			{
+				int launchTime = Convert.ToInt32(new Reg().In("Main").GetInfo("launchTime", "0"));
+				launchTime++;
+				new Reg().In("Main").SetInfo("launchTime", launchTime.ToString());
+				var item = new
+				{
+					username = "kh_icooling",
+					message = JsonConvert.SerializeObject(new
+					{
+						version = cur_as.GetName().Version.ToString(),
+						launchTime = launchTime
+					}),
+					rank = 16
+				};
+				var str = JsonConvert.SerializeObject(item);
+				using (var http = new HttpClient())
+				{
+					HttpContent content = new StringContent(str);
+					content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+					var res = http.PostAsync("http://39.97.229.104/log/report", content).Result;
+					Console.WriteLine(res.Content.ReadAsStringAsync().Result);
+				}
+			}).Start();
 		}
 
 		public MainWindow()

@@ -40,6 +40,7 @@ namespace project.wpf.f.icooling._2002.View
 				Device = new Model.Device.Device()
 				{
 					Name = this.GetType().Name.Replace("DeviceView", ""),
+					RequireWindDescription = "需要的风量/ m³/m",
 					Size = new Model.Device.DeviceSize(),
 					DevicePositions = new DevicePositions()
 					{
@@ -55,7 +56,7 @@ namespace project.wpf.f.icooling._2002.View
 						Members = Material,
 						NowSelect = new DeviceMaterial()
 					},
-					Power = new DevicePower(),
+					Power = new DevicePower() { PowerInputLabelText = "柜内电气总功率/W" },
 					TemperatureDifference = new DeviceTemperatureDifference(),
 					Atmospheric = new Atmospheric()
 					{
