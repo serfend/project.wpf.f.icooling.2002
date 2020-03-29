@@ -8,13 +8,13 @@ C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\obj\Debug\
 project.wpf.f.icooling._2002
 none
 false
-CODE_ANALYSIS;DEBUG;TRACE
+DEBUG;TRACE
 C:\Users\huawei\source\repos\project.wpf.f.icooling.2002\App.xaml
 17-1964589945
 
-36832880659
+37-1851680075
 1261298285402
 MainWindow.xaml;View\CalendarView.xaml;View\Control\Atmospheric.xaml;View\Control\DeviceFinalResult.xaml;View\Control\DeviceInstallPosition.xaml;View\Control\DeviceMaterial.xaml;View\Control\DevicePosition.xaml;View\Control\DevicePower.xaml;View\Control\SingleOption.xaml;View\Control\TemperatureDifference.xaml;View\DeviceView\DeviceView水热交换器.xaml;View\DeviceView\DeviceView加热器.xaml;View\DeviceView\DeviceView_冷暖水蒸发器.xaml;View\DeviceView\DeviceView_风扇过滤器.xaml;View\DeviceView\DeviceView_机柜空调.xaml;View\SplashView.xaml;View\Control\SurfaceArea.xaml;
 
-False
+True
 
