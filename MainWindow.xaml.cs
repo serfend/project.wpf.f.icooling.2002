@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -17,6 +16,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DevServer;
+using DotNet4.Utilities.UtilCode;
 using DotNet4.Utilities.UtilReg;
 using Newtonsoft.Json;
 using Panuon.UI.Silver;
@@ -47,30 +48,6 @@ namespace project.wpf.f.icooling._2002
 				var newName = x.Name;
 				_partialViewDic.Add(newName, x);
 			});
-			new Thread(() =>
-			{
-				int launchTime = Convert.ToInt32(new Reg().In("Main").GetInfo("launchTime", "0"));
-				launchTime++;
-				new Reg().In("Main").SetInfo("launchTime", launchTime.ToString());
-				var item = new
-				{
-					username = "kh_icooling",
-					message = JsonConvert.SerializeObject(new
-					{
-						version = cur_as.GetName().Version.ToString(),
-						launchTime = launchTime
-					}),
-					rank = 16
-				};
-				var str = JsonConvert.SerializeObject(item);
-				using (var http = new HttpClient())
-				{
-					HttpContent content = new StringContent(str);
-					content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-					var res = http.PostAsync("http://39.97.229.104/log/report", content).Result;
-					Console.WriteLine(res.Content.ReadAsStringAsync().Result);
-				}
-			}).Start();
 		}
 
 		public MainWindow()
@@ -86,6 +63,16 @@ namespace project.wpf.f.icooling._2002
 			};
 			ViewModel = new MainWindowViewModel(list);
 			DataContext = ViewModel;
+			this.Closed += MainWindow_Closed;
+		}
+
+		private void MainWindow_Closed(object sender, EventArgs e)
+		{
+			var devServer = new Reporter();
+			devServer.Report(new Report()
+			{
+				Message = JsonConvert.SerializeObject(new { status = "closing" })
+			});
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)

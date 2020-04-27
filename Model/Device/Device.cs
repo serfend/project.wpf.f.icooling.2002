@@ -129,7 +129,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public Atmospheric Atmospheric
 		{
 			get { return atmospheric; }
-			set { this.Set(ref atmospheric, value); }
+			set { this.Set(nameof(Atmospheric), ref atmospheric, value); }
 		}
 
 		#endregion 字段
@@ -137,7 +137,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public DevicePower Power
 		{
 			get { return power; }
-			set { this.Set(ref power, value); value.Parent = this; CaculateThePower(); }
+			set { this.Set(nameof(Power), ref power, value); value.Parent = this; CaculateThePower(); }
 		}
 
 		/// <summary>
@@ -146,19 +146,19 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public double RequireWind
 		{
 			get { return requireWind; }
-			set { this.Set(ref requireWind, value); }
+			set { this.Set(nameof(RequireWind), ref requireWind, value); }
 		}
 
 		public string RequireWindDescription
 		{
 			get { return requireWindDescription; }
-			set { this.Set(ref requireWindDescription, value); }
+			set { this.Set(nameof(RequireWindDescription), ref requireWindDescription, value); }
 		}
 
 		public string RequireWindDescriptionUnit
 		{
 			get { return requireWindDescriptionUnit; }
-			set { this.Set(ref requireWindDescriptionUnit, value); }
+			set { this.Set(nameof(RequireWindDescriptionUnit), ref requireWindDescriptionUnit, value); }
 		}
 
 		public Device()
@@ -168,7 +168,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public DevicePositions DevicePositions
 		{
 			get { return devicePositions; }
-			set { value.Parent = this; this.Set(ref devicePositions, value); }
+			set { value.Parent = this; this.Set(nameof(DevicePositions), ref devicePositions, value); }
 		}
 
 		/// <summary>
@@ -177,7 +177,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public double CaculatePower
 		{
 			get { return caculatePower; }
-			set { this.Set(ref caculatePower, value); }
+			set { this.Set(nameof(CaculatePower), ref caculatePower, value); }
 		}
 
 		/// <summary>
@@ -188,31 +188,31 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public DeviceMaterialViewModel DeviceMaterial
 		{
 			get { return deviceMaterial; }
-			set { value.Parent = this; this.Set(ref deviceMaterial, value); }
+			set { value.Parent = this; this.Set(nameof(DeviceMaterial), ref deviceMaterial, value); }
 		}
 
 		public DeviceModuleSelect ModuleSelect
 		{
 			get { return moduleSelect; }
-			set { this.Set(ref moduleSelect, value); }
+			set { this.Set(nameof(ModuleSelect), ref moduleSelect, value); }
 		}
 
 		public DeviceTemperatureDifference TemperatureDifference
 		{
 			get { return temperatureDifference; }
-			set { value.Parent = this; this.Set(ref temperatureDifference, value); }
+			set { value.Parent = this; this.Set(nameof(TemperatureDifference), ref temperatureDifference, value); }
 		}
 
 		public string Name
 		{
 			get { return name; }
-			set { this.Set(ref name, value); }
+			set { this.Set(nameof(Name), ref name, value); }
 		}
 
 		public DeviceSize Size
 		{
 			get { return size; }
-			set { value.Parent = this; this.Set(ref size, value); }
+			set { value.Parent = this; this.Set(nameof(Size), ref size, value); }
 		}
 	}
 
@@ -254,25 +254,25 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public double SurfaceArea
 		{
 			get { return surfaceArea; }
-			set { this.Set(ref surfaceArea, value); Parent.CaculateThePower(); }
+			set { this.Set(nameof(SurfaceArea), ref surfaceArea, value); Parent.CaculateThePower(); }
 		}
 
 		public int D
 		{
 			get { return d; }
-			set { this.Set(ref d, value); ResetSurfaceArea(); }
+			set { this.Set(nameof(D), ref d, value); ResetSurfaceArea(); }
 		}
 
 		public int H
 		{
 			get { return h; }
-			set { this.Set(ref h, value); ResetSurfaceArea(); }
+			set { this.Set(nameof(H), ref h, value); ResetSurfaceArea(); }
 		}
 
 		public int W
 		{
 			get { return w; }
-			set { this.Set(ref w, value); ResetSurfaceArea(); }
+			set { this.Set(nameof(W), ref w, value); ResetSurfaceArea(); }
 		}
 	}
 }

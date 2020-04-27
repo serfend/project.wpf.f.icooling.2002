@@ -27,7 +27,7 @@ namespace project.wpf.f.icooling._2002.Model
 		public object Content
 		{
 			get { return content; }
-			set { this.Set(ref content, value); }
+			set { this.Set(nameof(Content), ref content, value); }
 		}
 
 		public string Icon { get; set; }
@@ -39,7 +39,7 @@ namespace project.wpf.f.icooling._2002.Model
 		public Visibility Visibility
 		{
 			get => _visibility;
-			set { this.Set(ref _visibility, value); }
+			set { this.Set(nameof(Visibility), ref _visibility, value); }
 		}
 
 		private Visibility _visibility = Visibility.Visible;

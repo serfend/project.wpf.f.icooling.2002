@@ -14,7 +14,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public string MoudleName
 		{
 			get { return moduleName; }
-			set { this.Set(ref moduleName, value); }
+			set { this.Set(nameof(MoudleName), ref moduleName, value); }
 		}
 	}
 }

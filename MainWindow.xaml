@@ -10,7 +10,6 @@
         Title="主界面" Height="800" Width="1000">
 	<pu:WindowXCaption.ExtendControl>
 		<Button Content="&#xf1d6;"
-                FontFamily="{StaticResource FontAwesome}"
                 pu:ButtonHelper.ButtonStyle="Hollow"
                 pu:ButtonHelper.HoverBrush="#99999999"
                 Width="40"

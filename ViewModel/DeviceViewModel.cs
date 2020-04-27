@@ -21,7 +21,7 @@ namespace project.wpf.f.icooling._2002.ViewModel
 		public Device Device
 		{
 			get { return device; }
-			set { this.Set(ref device, value); }
+			set { this.Set(nameof(Device), ref device, value); }
 		}
 	}
 }

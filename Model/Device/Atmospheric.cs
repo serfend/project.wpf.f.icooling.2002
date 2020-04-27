@@ -16,7 +16,7 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public AtmosphericOption NowSelect
 		{
 			get { return nowSelect; }
-			set { this.Set(ref nowSelect, value); }
+			set { this.Set(nameof(NowSelect), ref nowSelect, value); }
 		}
 	}
 

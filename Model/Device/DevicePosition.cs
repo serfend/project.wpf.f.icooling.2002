@@ -17,13 +17,13 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public ObservableCollection<DevicePosition> Positions
 		{
 			get { return positions; }
-			set { this.Set(ref positions, value); }
+			set { this.Set(nameof(Positions), ref positions, value); }
 		}
 
 		public DevicePosition NowPosition
 		{
 			get { return nowPosition; }
-			set { this.Set(ref nowPosition, value); ResetSurfaceArea(); }
+			set { this.Set(nameof(NowPosition), ref nowPosition, value); ResetSurfaceArea(); }
 		}
 
 		private void ResetSurfaceArea()

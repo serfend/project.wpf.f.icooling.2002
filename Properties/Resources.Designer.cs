@@ -71,7 +71,7 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
-        ///   查找类似 这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是 的本地化字符串。
+        ///   查找类似  的本地化字符串。
         /// </summary>
         public static string AtmosphericDescription {
             get {
@@ -402,7 +402,7 @@ namespace project.wpf.f.icooling._2002.Properties {
         }
         
         /// <summary>
-        ///   查找类似 这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字 的本地化字符串。
+        ///   查找类似 温度的变化(例如，白天晚上，夏天冬天)必须充分考虑，请输入柜体的温差，决定温差是基于最大的柜内允许温度(通常是35度)和最大的柜外环境温度 的本地化字符串。
         /// </summary>
         public static string TemperatureDifferenceDescription {
             get {

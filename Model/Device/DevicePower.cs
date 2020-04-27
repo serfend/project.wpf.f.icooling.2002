@@ -16,13 +16,13 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public string PowerInputLabelText
 		{
 			get { return powerInputLabelText; }
-			set { this.Set(ref powerInputLabelText, value); }
+			set { this.Set(nameof(PowerInputLabelText), ref powerInputLabelText, value); }
 		}
 
 		public double Power
 		{
 			get { return power; }
-			set { this.Set(ref power, value); Parent.CaculateThePower(); }
+			set { this.Set(nameof(Power), ref power, value); Parent.CaculateThePower(); }
 		}
 	}
 }

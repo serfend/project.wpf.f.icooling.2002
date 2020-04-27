@@ -16,13 +16,13 @@ namespace project.wpf.f.icooling._2002.Model.Device
 		public double FitTemperature
 		{
 			get { return fitTemperature; }
-			set { this.Set(ref fitTemperature, value); Parent?.CaculateThePower(); }
+			set { this.Set(nameof(FitTemperature), ref fitTemperature, value); Parent?.CaculateThePower(); }
 		}
 
 		public double MaxTemperature
 		{
 			get { return maxTemperature; }
-			set { this.Set(ref maxTemperature, value); Parent?.CaculateThePower(); }
+			set { this.Set(nameof(MaxTemperature), ref maxTemperature, value); Parent?.CaculateThePower(); }
 		}
 	}
 }

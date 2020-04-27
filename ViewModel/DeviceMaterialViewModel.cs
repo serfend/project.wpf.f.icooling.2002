@@ -18,7 +18,7 @@ namespace project.wpf.f.icooling._2002.ViewModel
 		public DeviceMaterial NowSelect
 		{
 			get { return nowSelect; }
-			set { this.Set(ref nowSelect, value); Parent?.CaculateThePower(); }
+			set { this.Set(nameof(NowSelect), ref nowSelect, value); Parent?.CaculateThePower(); }
 		}
 	}
 }

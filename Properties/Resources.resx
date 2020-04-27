@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+    <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,116 +59,116 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+        <xsd:element name="root" msdata:IsDataSet="true">
             <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string"/>
+                            <xsd:attribute name="type" type="xsd:string"/>
+                            <xsd:attribute name="mimetype" type="xsd:string"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string"/>
+                            <xsd:attribute name="name" type="xsd:string"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+                            <xsd:attribute ref="xml:space"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
             </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Atmospheric" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atmospheric.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AtmosphericDescription" xml:space="preserve">
-    <value>这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是</value>
-  </data>
-  <data name="CalendarMode" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="CloseCodeViewer" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="company_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\company_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="company_name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\company_name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CopyCode" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="DevicePowerDescription" xml:space="preserve">
-    <value>安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）柜内电子元器件总功率（W）</value>
-  </data>
-  <data name="device_installPosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\device.installPosition.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="device_material" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\device.material.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="device_position" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\device.position.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="InstallDemo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InstallDemo_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="InstallDemo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InstallDemo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IsSundayFirst" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="LimitMaxDateTime" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="LimitMinDateTime" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="logo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+    <data name="Atmospheric" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\Atmospheric.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="AtmosphericDescription" xml:space="preserve">
+        <value/>
+    </data>
+    <data name="CalendarMode" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="CloseCodeViewer" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="company_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\company_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="company_name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\company_name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="CopyCode" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="DevicePowerDescription" xml:space="preserve">
+        <value>安装在柜内的电子元器件的电功率总合例如变频器、变压器、PLC、接触器、电源（等等）柜内电子元器件总功率（W）</value>
+    </data>
+    <data name="device_installPosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\device.installPosition.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="device_material" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\device.material.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="device_position" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\device.position.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </data>
+    <data name="InstallDemo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\InstallDemo_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="InstallDemo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\InstallDemo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="IsSundayFirst" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="LimitMaxDateTime" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="LimitMinDateTime" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="logo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>
         iVBORw0KGgoAAAANSUhEUgAAAHUAAACmCAYAAADkrsA9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAUYtJREFUeF7tXXd8T9f7NxJ771F7bzWzSJAhSCQkEjMRW+zYexMrdmxJROy9Z5VS
         pYoWrQ6t7upUrdrv3/N+bm58pJ8E/aLqlz+e1/2Me88957zPM885z0mV7nU3pNCrRSmgvoKUAuorSCmg
@@ -520,9 +520,9 @@
         KzGt9XsCJomwssQwxaV5BSkF1FeQUkB9BSkF1FeQUkB9BSkF1FeQUkB9BSkF1FeQUkB9BSkF1FeQUkB9
         BSkF1FeO3PB/rhFlkQGoFvUAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="logoSingle" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+    </data>
+    <data name="logoSingle" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYa
         HSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgo
         KCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAFSAVMDASIAAhEBAxEB/8QA
@@ -848,83 +848,83 @@
         FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUwCiiikAUUUUAFFFFABRRRQAUUUUAFFFFA
         BRRRQAUUUUAFFFFABRRRQB//2Q==
 </value>
-  </data>
-  <data name="Palette" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="position_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_1_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_1_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_2_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_2_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_3_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_3_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_4_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_4_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_5_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_5_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="position_6_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\position_6_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="request2_logoHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\request2.logoHead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="request2_logoMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\request2.logoMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="request2_splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\request2.splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TemperatureDifferenceDescription" xml:space="preserve">
-    <value>这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字这里是示例文字</value>
-  </data>
-  <data name="ThemeBrush" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="ViewCode" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="冷暖水交换器_installdemo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_installdemo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="冷暖水交换器_installdemo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_installdemo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="冷暖水交换器_selector_for_client" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_selector_for_client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="冷暖水交换器_selector_for_client1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_selector_for_client1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="冷暖水交换器_selector_for_client2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_selector_for_client2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="冷暖水交换器_selector_for_client3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\冷暖水交换器_selector_for_client3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+    </data>
+    <data name="Palette" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="position_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_1_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_1_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_2_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_2_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_3_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_3_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_4_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_4_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_5_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_5_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="position_6_huge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\position_6_huge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="request2_logoHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\request2.logoHead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="request2_logoMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\request2.logoMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="request2_splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\request2.splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="TemperatureDifferenceDescription" xml:space="preserve">
+        <value>温度的变化(例如，白天晚上，夏天冬天)必须充分考虑，请输入柜体的温差，决定温差是基于最大的柜内允许温度(通常是35度)和最大的柜外环境温度</value>
+    </data>
+    <data name="ThemeBrush" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="ViewCode" xml:space="preserve">
+        <value>123</value>
+    </data>
+    <data name="冷暖水交换器_installdemo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_installdemo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="冷暖水交换器_installdemo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_installdemo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="冷暖水交换器_selector_for_client" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_selector_for_client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="冷暖水交换器_selector_for_client1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_selector_for_client1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="冷暖水交换器_selector_for_client2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_selector_for_client2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
+    <data name="冷暖水交换器_selector_for_client3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+        <value>..\Resources\冷暖水交换器_selector_for_client3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    </data>
 </root>
