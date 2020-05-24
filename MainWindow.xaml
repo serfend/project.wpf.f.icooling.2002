@@ -27,18 +27,18 @@
 			Grid.Row="0">
 			<WrapPanel.Background>
 				<LinearGradientBrush StartPoint="0.4,0" EndPoint="1,0">
-					<GradientStop Offset="0" Color="#111111"></GradientStop>
-					<GradientStop Offset="1" Color="#ffffff"></GradientStop>
+					<GradientStop Offset="0" Color="#D7DEE2"></GradientStop>
+					<GradientStop Offset="1" Color="#D7DEE2"></GradientStop>
 				</LinearGradientBrush>
 			</WrapPanel.Background>
-			<Image Margin="0 0" Source="/Resources/request2.logoMain.png"></Image>
+			<Image Margin="20 0" Source="/Resources/logo.png"></Image>
 			<!--<TextBlock VerticalAlignment="Center" FontSize="30"  Text="企业LOGO/名称  佐志温控"></TextBlock>-->
-			<!--<Image Source="Resources/company_name.png" />-->
+			<Image Source="Resources/company_name.png" />
 		</WrapPanel>
 		<TabControl x:Name="NavMenu"
 			 Grid.Row="1"
 			  BorderBrush="Transparent"
-				pu:TabControlHelper.HeaderPanelBackground="#000000"
+				pu:TabControlHelper.HeaderPanelBackground="#D7DEE2"
 			  pu:TabControlHelper.SelectedForeground="#ffffff"
 
 			  SelectionChanged="NavMenu_SelectionChanged"
