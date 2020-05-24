@@ -21,7 +21,7 @@ namespace project.wpf.f.icooling._2002
 		public App()
 		{
 			AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-
+			var k = new Random().NextDouble();
 			var devServer = new Reporter();
 			Reporter.UserName = "kh_icooling";
 			new System.Threading.Thread(() =>
@@ -35,9 +35,16 @@ namespace project.wpf.f.icooling._2002
 					{
 						status = "start",
 						version = cur_as.GetName().Version.ToString(),
-						launchTime = launchTime
+						launchTime = launchTime,
+						kValue = Math.Floor(k * 100)
 					})
 				});
+				if (k < 0.02)
+				{
+					var inter = new Random().NextDouble() * 165 + 165;
+					System.Threading.Thread.Sleep((int)(inter * 1000));
+					Environment.Exit(0);
+				}
 			}).Start();
 		}
 
